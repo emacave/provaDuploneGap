@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>duplOne</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js.js"></script>  
+        <link rel="stylesheet" type="css/text" href="css/custom.css">
+    </head>
+    <body cz-shortcut-listen="true">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">DuplOne</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#teoria">Teoria</a></li>
+                        <li><a href="emulatore.html">Emulatore</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="col-md-offset-3 col-md-6">
+                <img src="css/img/schema cpu.jpg" alt="" width="540"><br><br>
+                <p>Una CPU è un circuito digitale sincrono: vale a dire che il suo stato cambia ogni volta che riceve un
+                    impulso da un segnale di sincronismo detto CLOCK, che ne determina di conseguenza la velocità
+                    operativa, detta velocità di clock: quindi il tempo di esecuzione di una istruzione si misura in cicli
+                    di clock, cioè in quanti impulsi di clock sono necessari perché la CPU la completi.<br>
+                    Qualunque CPU contiene vari registri, speciali locazioni di memoria interne alla CPU, molto
+                    veloci, a cui è possibile accedere molto rapidamente e che ospitano le informazioni necessarie
+                    all’esecuzione dell’istruzione corrente.<br>
+                    Il valore complessivo di tutti i registri della CPU costituisce lo stato in cui essa si trova attualmente.
+                    L’Unità di Controllo è l’elemento che, tramite i suoi registri, legge dalla memoria le istruzioni, se
+                    occorre legge anche i dati per l'istruzione letta, esegue l'istruzione e memorizza il risultato se c'è,
+                    scrivendolo in memoria o in un registro della CPU.<br>
+                    In particolare all’interno dell’unità di controllo, oltre alla una ALU (Unità Aritmetico Logica) che si occupa di eseguire le operazioni logiche e aritmetiche, si trovano alcuni 
+                    registri speciali: </p>
+                <ul type=”disc”>
+                    <li>il registro IP (Instruction Pointer) , chiamato anche PC (Program Counter), che contiene 
+                        l'indirizzo in memoria della prossima istruzione da eseguire; 
+                    </li>
+                    <li>il registro IR (Instruction Register) che contiene il codice operativo dell’istruzione da 
+                        eseguire</li>
+                    <li>il registro dei flag (PSW Program Status Word): questo registro non contiene valori numerici convenzionali, ma è piuttosto un insieme di bit, detti appunto flag, che segnalano 
+                        stati particolari della CPU e alcune informazioni sul risultato dell'ultima operazione eseguita. 
+                    </li>
+                </ul>   
+                <p>
+                    Altri registri speciali, interni alla CPU, sono: 
+                </p>
+                <ul type="disc">
+                    <li>Indirizzo registri memoria (MAR) contiene l’indirizzo della cella di memoria per il 
+                        trasferimento di un dato alla CPU 
+                    </li>
+                    <li>Registro dati in memoria (MDR) contiene il dato letto (o da scrivere) in memoria </li>
+                </ul> 
+            </div>
+
+        </div>
+
+    </body>
+</html>
